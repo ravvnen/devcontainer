@@ -1,0 +1,10 @@
+version: '3'
+services:
+  devcontainer:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - '80:80'
+    devices:
+      - '/dev/ttyUSB0:/dev/ttyUSB0'
