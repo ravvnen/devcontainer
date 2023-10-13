@@ -4,7 +4,7 @@ FROM mcr.microsoft.com/devcontainers/base:ubuntu
 #apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
 # tzdata \
 
-RUN apt-get update \
+RUN apt-get update && \
     python3 \
     python3-pip \
     scons \
