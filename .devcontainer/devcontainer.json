@@ -1,6 +1,7 @@
 {
-  "build": {
-    // Path is relative to the devcontainer.json file.
-    "dockerfile": "Dockerfile"
-  }
+  "name": "Project in docker file",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "project",
+  "workspaceFolder": "/workspaces",
+  "shutdownAction": "stopCompose"
 }
