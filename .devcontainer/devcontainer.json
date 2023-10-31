@@ -1,7 +1,8 @@
 {
-  "name": "Project in docker file",
-  "dockerComposeFile": "docker-compose.yml",
-  "service": "project",
-  "workspaceFolder": "/workspaces",
-  "shutdownAction": "stopCompose"
+  "build": { 
+    "dockerfile": "Dockerfile" 
+  },
+  "runArgs": [
+    "--privileged"
+  ]
 }
